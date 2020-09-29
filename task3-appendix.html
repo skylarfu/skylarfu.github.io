@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- Meta tags -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="designer" content="Rob Dongas">
+   <!-- Required imported CSS files -->
+   <link rel="stylesheet" href="css/reset.css" />
+   <!-- Main CSS file -->
+   <link rel="stylesheet" href="css/styles.css" />
+
+   <!-- Title -->
+   <title>Interaction Design Studio</title>
+</head>
+
+
+
+<body class="container" id="top">
+
+   <!-- Make your modifications below -->
+   <header>
+      <div class="header-container">
+         <h1>Super Trolley</h1>
+      </div>
+      <nav>
+         <input type="checkbox" id="toggle" checked>
+         <label for="toggle" class="nav-toggle">
+            <div class="nav-icon"></div>
+         </label>
+         <ul>
+            <li>
+               <a href="about.html">About</a>
+            </li>
+           
+            <li class="active">
+               <a href="task3.html">Task 3</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Make your navigation modifications below -->
+   <!-- Replicate the heading structure for a 'table of contents' nav -->
+   <aside>
+      <div class="aside-container">
+         <h4>Jump To...</h4>
+         <ol>
+            <li><a href="#part1">Wireframes</a></li>
+
+            <li><a href="#part2">Usability Evaluation Matrix</a></li>
+           
+            <li><a href="#part3">Testing Pictures</a></li>
+             
+            <li><a href="#part4">Prototype</a></li>
+
+            <li><a href="#part5">Journal</a></li>
+         </ol>
+          
+      </div>
+   </aside>
+
+   <main>
+      <article>
+
+         <!-- Make your content modifications below -->
+         <!-- Section for the top banner heading -->
+         <section class="title-container">
+            <h1 id="title">Task 3 Appendix</h1>
+            <p>Completed by Mika Peng, Terri Wang, Skylar Fu | 6 November 2019</p>
+            <div class="center-container">
+               <a class="button" href="task3.html">
+
+                  <svg class="icon-arrow-left">
+                     <use xlink:href="#arrow"></use>
+                  </svg>
+                  <span class="label">Task 3</span>
+               </a>
+            </div>
+            <span class="separator"></span>
+         </section>
+
+         <!-- Body section with additional heading elements -->
+         <section class="content-container">
+            <h1 id="part1">Wireframes</h1>
+            <p><a href="wireframe1.pdf"><strong>Click here for wireframe 1.</strong></a></p>
+            <p><a href="wireframe2.pdf"><strong>Click here for wireframe 2.</strong></a></p>
+            <p><a href="wireframe3.pdf"><strong>Click here for wireframe 3.</strong></a></p>
+
+            <h1 id="part2">Usability Evaluation Matrix</h1>
+            <p><a href="1.pdf"><strong>Click here for low-fidelity prototypr testing matrix.</strong></a></p>
+            <p><a href="22.pdf"><strong>Click here for high-fidelity prototypr testing matrix.</strong></a></p>
+
+            <h1 id="part3">Testing Pictures</h1>
+            <img src="img/2.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/3.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/4.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/5.jpeg" width=50% 
+               alt="This is a figure." />
+               <img src="img/6.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/7.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/8.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/9.jpeg" width=50% 
+               alt="This is a figure." />
+               <img src="img/10.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/11.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/14.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/15.jpeg" width=50% 
+               alt="This is a figure." />
+               <img src="img/12.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/13.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/16.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/17.jpeg" width=50% 
+               alt="This is a figure." />
+               <img src="img/18.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/19.jpeg" width=50% 
+               alt="This is a figure." />
+            <img src="img/20.jpeg" width=50% 
+               alt="This is a figure." />
+               
+            <h1 id="part4">prototype</h1>
+            <img src="img/figma.png" width=100% 
+               alt="This is a figure." />
+            
+            <h1 id="part5">Journal</h1>
+            <p><a href="2200.pdf"><strong>Click here for our journal.</strong></a></p>
+
+         </section>
+
+
+
+
+
+
+      </article>
+   </main>
+
+
+
+   <!-- DO NOT modify the following code -->
+   <footer>
+      <a href="#top">
+         <svg class="icon-arrow-up">
+            <use xlink:href="#arrow"></use>
+         </svg>Back to top</a>
+      <div class="logo-container"><img src="img/USydLogo.svg" /></div>
+      <svg style="display: none;">
+         <defs>
+            <symbol id="arrow" viewBox="0 0 35 15">
+               <title>Arrow</title>
+               <path d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z " />
+            </symbol>
+         </defs>
+      </svg>
+   </footer>
+
+
+   <!-- Required imported js -->
+   <script src="js/scrollmenu.js"></script>
+   <script type="text/javascript">
+      new ScrollMenu('.aside-container a[href*="#"]', {
+         duration: 500,
+         activeOffset: 100,
+      })
+      new ScrollMenu('footer a[href*="#"], .content-container a[href*="#"]', {
+         duration: 500,
+      })
+   </script>
+
+
+
+</body>
+
+</html>
