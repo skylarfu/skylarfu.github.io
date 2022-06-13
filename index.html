@@ -1,38 +1,171 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>DECO3200</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>COVID Community</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet">
+      <!-- Font Awesome icons -->
+      <link rel="stylesheet" href="icons/css/all.css">
+    <!-- Required Bootstrap CSS files from Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="covid-bootstrap.css">
   </head>
 
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">DECO3200</h1>
-        <p class="header">By <a class="headerName" href="https://github.sydney.edu.au/dkum4681">dkum4681</a> and <a class="headerName" href="https://github.sydney.edu.au/xufu7940">xufu7940</a></p>
-      </header>
-
-      <section role="main">
-        <h2>DECO3200 Interactive Product Design Studio</h2>
-        <h3>Design Brief</h3>
-        <p>Given the outbreak of COVID-19 and the spread of misinformation that has followed, it is essential to provide an accessible platform where individuals can locate relevant, accurate and real-time information about the virus. In response, a website has been created with a focus on addressing the United Nation’s key messages of common COVID-19 symptoms and how to get tested. This product is designed for ethnic and minority groups in Australia, who have faced barriers in accessing and engaging with information about symptoms and testing procedures. However, this website is also available to the wider Australian community and will ensure all Australians are empowered to engage with public health messages.</p>
-        <p>To access the product, visit the following links:
-          <ul>
-            <li><a href="covid-community/index.html" target="_blank">COVID Community</a></li>
-            <li><a href="A3.html" target="_blank">Assessment 3 Report</a></li>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">COVID Community</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="updates.html">Updates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="connect.html">Connect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="locate.html">Locate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book.html">Book</a>
+            </li>
           </ul>
-        </p> 
-      </section>        
+        </div>
+      </div>
+      </div>
+    </nav>
 
-
-      <footer role="contentinfo">
-        <p><small>Maintained by <a class="footerName" href="https://github.sydney.edu.au/dkum4681">dkum4681</a> and <a class="footerName" href="https://github.sydney.edu.au/xufu7940">xufu7940</a></small></p>
-      </footer>
+    <!-- Carousel images -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/cough_symptoms.svg" data-src="holder.js/900x400?theme=social" alt="Got a cough? Get tested.">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/testing_clinic.svg" data-src="holder.js/900x400?theme=social" alt="Visit a testing clinic if unwell.">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
+
+    <!-- Cards for each main user function-->
+    <div class="container">   
+      <div class="card-deck mt-5">
+        
+        <!-- Updates card -->
+        <div class="col-md-4">
+          <div class="card mx-auto">
+            <a href="updates.html" class="card-link">
+            <img src="images/updates.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Updates</h5>
+              <p class="card-text">See updates about COVID-19 symptoms, testing and case numbers in
+                Australia.</p>
+            </div>
+            </a>
+          </div>
+        </div>
+      
+        <!-- Quiz card -->
+        <div class="col-md-4">
+          <div class="card mx-auto">
+            <a href="quiz.html" class="card-link">
+            <img src="images/quiz.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Quiz</h5>
+                <p class="card-text">Check your symptoms and see if you need to get tested for COVID-19.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Connect card -->
+        <div class="col-md-4">
+          <div class="card mx-auto">
+            <a href="connect.html" class="card-link">
+            <img src="images/connect.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Connect</h5>
+                <p class="card-text">View community leaders in your area and make an appointment.</p>
+              </div>
+              </a>
+          </div>
+        </div>
+
+        <!-- Book card -->
+        <div class="col-md-4">
+          <div class="card mx-auto">
+            <a href="book.html" class="card-link">
+            <img src="images/meeting.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Book</h5>
+                <p class="card-text">Book a meeting with a community leader for more information about
+                symptoms and testing.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Locate card -->
+        <div class="col-md-4">
+          <div class="card mx-auto">
+            <a href="locate.html" class="card-link">
+            <img src="images/clinic.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Locate</h5>
+                <p class="card-text">Find COVID-19 testing clinics in your suburb or region.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <!-- Footer with copyright and Last Updated date -->
+    <footer class="mt-5 py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">COVID Community<sup>&copy; </sup>
+        <br><small><sup>Last updated 28/11/20</sup></small></p>
+      </div>
+    </footer>
+
+    <!-- required Bootstrap JS files from Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <!-- template JS files -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
