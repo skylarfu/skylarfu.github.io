@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>COVID Community</title>
+    <script src="quiz.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- Required Bootstrap CSS files from Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="covid-bootstrap.css">
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">COVID Community</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="updates.html">Updates</a>
+                </li>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="quiz.html">Quiz</a>
+                    </li>    <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="connect.html">Connect</a>
+            </li>    <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="locate.html">Locate</a>
+            </li>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="book.html">Book</a>
+                </li>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <!-- Progress bar informs users of the questions they have answered in the quiz -->
+      <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-column justify-content-between"></div>
+          <div class="d-block w-100"> 
+            <div class="progress">
+              <div id="dynamic" class="progress-bar progress-bar-success active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%; background-color: #7EC8E3;">
+              <span id="current-progress"></span>
+              </div>
+            </div>
+          </div>
+        <div class="d-flex flex-column justify-content-between"></div>
+      </div> 
+
+      <!-- Main content begins here -->
+      <main class="container">
+        <!-- Description for the quiz -->
+        <h1 class="page-headings">COVID-19 Symptoms Quiz</h1>
+        <h3>How to complete this quiz</h3>
+        <p>Select a response to each of the questions below. Upon completion of the quiz, you will get a result that will advise you if you need to get tested for COVID-19. If you feel you may be at risk of contracting the virus, please get tested immediately. COVID-19 tests are fast, free and most people get their results within 24 hours.</p>
+
+        <!-- Form for the symptom-checking quiz -->
+        <form id="quizForm">
+          <br><h4>Take the Quiz</h4>
+
+          <!-- Question 1 -->
+          <div class="row">
+            <!-- Image to help users understand the symptom -->
+            <div class="col-lg"><img src="images/loss_of_smell.jpg" class="mx-auto" alt="Loss of smell experienced by a coffee drinker"/></div>
+            <!-- Update the progress bar once an answer has been selected -->
+            <div class="col-lg" onclick="progressUpdate()">
+              <label for="q1">1. Have you experienced a loss of smell or taste in the past 2 weeks?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="yes1" name="q1">
+                <label class="custom-control-label" for="yes1">Yes</label>
+              </div>
+              <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="checked1" name="q1">
+            <label class="custom-control-label" for="checked1">No</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="row">
+            <div class="col-lg"><img src="images/fever.jpg" class="mx-auto" alt="Fever reading of 38.75 degrees"/></div>
+              <div class="col-lg" onclick="progressUpdate2()">
+              <label for="q2">2. Have you had a fever of 37.5°C or more, a cough or fatigue in the past 14 days?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="yes2" name="q2">
+                <label class="custom-control-label" for="yes2">Yes</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="checked2" name="q2">
+                <label class="custom-control-label" for="checked2">No</label>
+              </div>
+              </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="row">
+            <div class="col-lg"><img src="images/rash.jpg" class="mx-auto" alt="A painful rash"/></div>
+            <div class="col-lg" onclick="progressUpdate3()">
+              <label for="q3">3. Have you experienced a rash on your skin or a discolouration of your fingers or toes?</label>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="yes3" name="q3">
+              <label class="custom-control-label " for="yes3">Yes</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="checked3" name="q3">
+              <label class="custom-control-label" for="checked3">No</label>
+            </div>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="row">
+            <div class="col-lg"><img src="images/aches.jpg" class="mx-auto" alt="Shoulder aches and pains experienced by a person"/></div>
+            <div class="col-lg" onclick="progressUpdate4()">
+              <label for="q4">4. Have you recently had aches or pains, a sore throat, diarrhoea or conjunctivitis?</label>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="yes4" name="q4">
+              <label class="custom-control-label " for="yes4">Yes</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="checked4" name="q4">
+              <label class="custom-control-label" for="checked4">No</label>
+            </div>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="row">
+            <div class="col-lg"><img src="images/chest_pain.jpg" class="mx-auto" alt="Chest pains experienced by a person"/></div>
+            <div class="col-lg" onclick="progressUpdate5()">
+              <label for="q5">5. Have you experienced difficulty breathing or a loss of speech and movement?</label>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="yes5" name="q5">
+              <label class="custom-control-label" for="yes5">Yes</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="checked5" name="q5">
+              <label class="custom-control-label" for="checked5">No</label>
+            </div>
+            </div>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="row">
+            <div class="col-lg"><img src="images/close_contacts.jpg" class="mx-auto" alt="Two close contacts in a handshake"/></div>
+            <div class="col-lg" onclick="progressUpdate6()">
+              <label for="q6">6. Have you been in contact with a person who has tested positive for COVID-19 in the past 14 days?</label>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="yes6" name="q6">
+              <label class="custom-control-label" for="yes6">Yes</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="checked6" name="q6">
+              <label class="custom-control-label" for="checked6">No</label>
+            </div>
+            </div>
+          </div>
+
+          <!-- Question 7 -->
+          <div class="row">
+            <div class="col-lg"><img src="images/busy_area.jpg" class="mx-auto" alt="Crowded town with a large cluster of people"/></div>
+            <div class="col-lg" onclick="progressUpdate7()">
+              <label for="q7">7. In the last 14 days, did you visit a location where a COVID-19 cluster has been identified?</label>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="yes7" name="q7">
+              <label class="custom-control-label" for="yes7">Yes</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="checked7" name="q7">
+              <label class="custom-control-label" for="checked7">No</label>
+            </div>
+            </div>
+          </div>
+
+          <!-- Question 8 -->
+          <div class="row">
+            <div class="col-lg"><img src="images/lose_appetite.jpg" class="mx-auto" alt="Loss of appetite"/></div>
+            <div class="col-lg" onclick="progressUpdate8()">
+              <label for="q8">8. Have you had an unexplainable loss of appetite in the last 14 days?</label>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="yes8" name="q8">
+              <label class="custom-control-label" for="yes8">Yes</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="checked8" name="q8">
+              <label class="custom-control-label" for="checked8">No</label>
+            </div>
+            </div>
+          </div>
+        </form>
+
+        <!-- Return user quiz results when quiz is submitted -->
+        <button type="button" class="btn btn-primary" onclick="getResults()">Get Results</button>
+  </div>
+      </main>
+
+    <!-- Footer with Last Updated date -->
+    <footer class="mt-5 py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">COVID Community<sup>&copy;</sup>
+        <br><small><sup>Last updated 28/11/20</sup></small></p>
+      </div>
+    </footer>
+    
+    <!-- required Bootstrap JS files from Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- template JS files -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body> 
+</html>
