@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>COVID Community</title>
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Required Bootstrap CSS files from Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="covid-bootstrap.css">
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">COVID Community</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="updates.html">Updates</a>
+              </li>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Quiz</a>
+                  </li>    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="connect.html">Connect</a>
+          </li>    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="locate.html">Locate</a>
+          </li>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="book.html">Book</a>
+              </li>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+  
+    <!-- Main content begins here -->
+    <main class="container">
+      <!--Title -->
+      <h1 class="page-headings">Book a Meeting</h1>
+      <div class="container overflow-hidden"><br>
+        <!-- Form with multiple steps -->
+        <div class="multisteps-form">
+          
+          <!-- Progress bar lets users see all steps in the booking process -->
+          <div class="row">
+            <div class="col-12 ">
+              <div class="multisteps-form__progress">
+                <button class="multisteps-form__progress-btn js-active" type="button" title="User Info">Select Leader</button>
+                <button class="multisteps-form__progress-btn" type="button" title="Address" >Select Date</button>
+                <button class="multisteps-form__progress-btn" type="button" title="Order Info">Select Time</button>
+                <button class="multisteps-form__progress-btn" type="button" title="Comments"> Enter Details</button>
+                <button class="multisteps-form__progress-btn" type="button" title="Comments" disabled>Submit       </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Booking steps -->
+          <div class="row">
+            <div class="col-12">
+              <form class="multisteps-form__form">
+
+                <!-- Step 1: Select Leader -->
+                <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn">
+                  <h3 class="multisteps-form__title h3-book">1. Select leader</h3>
+                  <div class="multisteps-form__content">
+                    <div class="radio-buttons">
+                      <div class="row">
+
+                        <!-- First leader card: Bessie -->
+                        <div class="col-md-6">
+                          <label class="custom-radio">
+                            <input type="radio" name="radio"/>
+                            <span class="radio-btn">
+                              <div class="row container pt-2 pb-2">
+                                <div class="col-sm-6 align-self-center">
+                                  <img src="leader1.png" class="rounded float-left mr-0"  alt="Photo of Bessie"/>
+                                </div>
+                                <div class="col-sm-6 mx-0 my-0 align-self-center">
+                                  <h5 class="card-title2">Bessie Nguyen</h5>         
+                              <small><p class="card-text">Trusted leader from Annandale, NSW.
+                              </p><h6 class="card-title2 mt-3">Languages</h6>         
+                              <div class="row row-cols-3 ">
+                                <div class="col mx-0 my-0">
+                                <img src="country-png/262-united-kingdom.png" class="flag-png mx-0 my-0 countries" alt="Flag of Great Britain"><sub>English</sub>
+                                </div>          
+                                <div class="col mx-0 my-0">
+                                  <img src="country-png/077-france.png"class="flag-png mx-0 my-0 " alt="French flag"><sub>French</sub>
+                                </div>          
+                                <div class="col mx-0 my-0">
+                                  <img src="country-png/261-china.png" class="flag-png mx-0 my-0 " alt="Chinese flag"><sub>Mandarin</sub>
+                                </div>
+                              </div>           
+                              </div>
+                              </div>
+                              </small>
+                            </span>
+                          </label>
+                        </div>
+                        
+                        <!-- Second leader card: Wade -->
+                        <div class="col-md-6">
+                          <label class="custom-radio">
+                            <input type="radio" name="radio"/>
+                            <span class="radio-btn">
+                              <div class="row container pt-2 pb-2">
+                                <div class="col-sm-6 align-self-center">
+                                  <img src="leader2.png" class="rounded float-left mr-0"  alt="Photo of Wade">
+                                </div>
+                                <div class="col-sm-6 mx-0 my-0 align-self-center">
+                                  <h5 class="card-title2">Wade Warren</h5>
+                                  <small><p class="card-text">Community leader from Orange, NSW.</p>
+                                    <h6 class="card-title2 mt-3">Languages</h6>
+                                    <div class="row row-cols-3">
+                                      <div class="col mx-0 my-0">
+                                        <img src="country-png/262-united-kingdom.png" class="flag-png mx-0 my-0" alt="Flag of Great Britain"><sub>English</sub>
+                                      </div>
+                                      <div class="col mx-0 my-0">
+                                        <img src="country-png/011-italy.png" class="flag-png mx-0 my-0 " alt="Italian flag"><sub>Italian</sub>
+                                      </div>
+                                      <div class="col mx-0 my-0">
+                                        <img src="country-png/217-india.png" class="flag-png mx-0 my-0" alt="Indian flag"><sub>Hindi</sub>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </small>
+                            </span>
+                          </label>
+                        </div>
+                        
+                        <!-- Third leader card: Jacob -->
+                        <div class="col-md-6">
+                          <label class="custom-radio">
+                            <input type="radio" name="radio"/>
+                            <span class="radio-btn">
+                              <div class="row container pt-2 pb-2">
+                                <div class="col-sm-6 align-self-center">
+                                  <img src="leader3.png" class="rounded float-left mr-0 "  alt="Photo of Jacob">
+                                </div>
+                                <div class="col-sm-6 mx-0 my-0 align-self-center">
+                                  <h5 class="card-title2 ">Jacob Jones</h5>
+                                  <small><p class="card-text">Cultural leader from Byron Bay, NSW.</p>
+                                    <h6 class="card-title2 mt-3">Languages</h6>
+                                    <div class="row row-cols-3">
+                                      <div class="col mx-0 my-0">
+                                        <img src="country-png/262-united-kingdom.png" class="flag-png mx-0 my-0" alt="Flag of Great Britain"><sub>English</sub>
+                                      </div>
+                                      <div class="col mx-0 my-0">
+                                        <img src="country-png/076-philippines.png" class="flag-png mx-0 my-0" alt="Filipino flag"><sub>Tagalog</sub>
+                                      </div>
+                                      <div class="col mx-0 my-0">
+                                        <img src="country-png/261-china.png" class="flag-png mx-0 my-0 " alt="Chinese flag"><sub>Cantonese</sub>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </small>
+                            </span>
+                          </label>
+                        </div>
+                        
+                        <!-- Fourth leader card: Kristin -->
+                        <div class="col-md-6">
+                          <label class="custom-radio">
+                            <input type="radio" name="radio"/>
+                            <span class="radio-btn">
+                              <div class="row container pt-2 pb-2">
+                                <div class="col-sm-6 align-self-center">
+                                  <img src="leader4.png" class="rounded float-left mr-0"  alt="Photo of Kristin">
+                                </div>
+                                <div class="col-sm-6 mx-0 my-0 align-self-center">
+                                  <h5 class="card-title2 ">Kristin Watson</h5>
+                                  <small><p class="card-text">Community leader from Werribee, VIC.</p>
+                                    <h6 class="card-title2 mt-3">Languages</h6>
+                                    <div class="row row-cols-3">
+                                      <div class="col mx-0 my-0">
+                                        <img src="country-png/262-united-kingdom.png" class="flag-png mx-0 my-0" alt="Flag of Great Britain"><sub>English</sub>
+                                      </div>
+                                      <div class="col mx-0 my-0">
+                                        <img src="country-png/071-greece.png" class="flag-png mx-0 my-0" alt="Greek flag"><sub>Greek</sub>
+                                      </div>
+                                      <div class="col mx-0 my-0">
+                                        <img src="country-png/164-vietnam.png" class="flag-png mx-0 my-0 " alt="Vietnamese flag"><sub>Vietnamese</sub>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </small>
+                            </span>
+                          </label>
+                        </div>
+                        
+                        <!-- Fifth leader card: Jenny -->
+                        <div class="col-md-6">
+                          <label class="custom-radio">
+                            <input type="radio" name="radio"/>
+                            <span class="radio-btn">
+                              <div class="row container pt-2 pb-2">
+                                <div class="col-sm-6 align-self-center">
+                                  <img src="leader5.png" class="rounded float-left mr-0"  alt="Photo of Jenny">
+                                </div>
+                                <div class="col-sm-6 mx-0 my-0 align-self-center">
+                                  <h5 class="card-title2">Jenny Wilson</h5>
+                                  <small><p class="card-text">Trusted leader from Fremantle, WA.</p>
+                                    <h6 class="card-title2 mt-3">Languages</h6>
+                                    <div class="row row-cols-3">
+                                      <div class="col mx-0 my-0">
+                                        <img src="country-png/262-united-kingdom.png" class="flag-png mx-0 my-0" alt="Flag of Great Britain"><sub>English</sub>
+                                      </div>
+                                      <div class="col mx-0 my-0">
+                                        <img src="country-png/217-india.png" class="flag-png mx-0 my-0 " alt="Indian flag"><sub>Punjabi</sub>
+                                      </div>
+                                      <div class="col mx-0 my-0">
+                                        <img src="country-png/068-united-arab-emirates.png" class="flag-png mx-0 my-0" alt="Flag of the UAE"><sub>Arabic</sub>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </small>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Next button -->
+                    <div class="button-row d-flex mt-4">
+                      <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Step 2: Select Date -->
+                <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                  <h3 class="multisteps-form__title h3-book">2. Select Date</h3>
+                  <div class="multisteps-form__content">
+                    <script src="book.js"></script>
+                    <div class="row-lg-8">
+                      <div class="elegant-calencar">
+                        <p id="reset">Reset</p>
+                        <div id="header" class="clearfix">
+                          <div class="pre-button"><</div>
+                          <div class="next-button">></div>
+                          <div class="head-info">
+                            <div class="head-day"></div>
+                            <div class="head-month"></div>
+                          </div>
+                        </div>
+                        
+                        <!-- Calendar dates -->
+                        <table id="calendar">
+                          <thead>
+                            <tr>
+                              <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    
+                    <!-- Previous and next buttons -->
+                    <div class="row row-col-2">
+                      <div class="col">
+                        <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                      </div>
+                      <div class="col">
+                        <button class="btn btn-primary js-btn-next" type="button" title="Next">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                <!-- Step 3: Select Time -->
+                <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                  <h3 class="multisteps-form__title h3-book">3. Select Time</h3>
+                  <div class="multisteps-form__content">
+                    <div class="row-md-8">
+                      <div class="btn-groupd-flex btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-primary disabled  my-1">
+                          <input type="radio" name="options" id="option1" >10:00am
+                        </label>
+                        <label class="btn btn-primary my-1">
+                              <input type="radio" name="options" id="option2">11:00am
+                            </label>
+                            <label class="btn btn-primary my-1">
+                              <input type="radio" name="options" id="option3">12:00pm
+                            </label>
+                            <label class="btn btn-primary my-1">
+                              <input type="radio" name="options" id="option3">1:00pm
+                            </label>
+                            <label class="btn btn-primary my-1">
+                              <input type="radio" name="options" id="option3">2:00pm
+                            </label>
+                            <label class="btn btn-primary my-1">
+                              <input type="radio" name="options" id="option3">3:00pm
+                            </label>
+                            <label class="btn btn-primary my-1">
+                              <input type="radio" name="options" id="option3">4:00pm
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <!-- Previous and next -->
+                        <div class="row row-col-2">
+                          <div class="col">
+                            <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                          </div>
+                          <div class="col">
+                            <button class="btn btn-primary js-btn-next" type="button" title="Next">Next</button>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+
+                <!-- Step 4: Enter Details -->
+                <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                  <h3 class="multisteps-form__title h3-book">4. Enter Details</h3>
+                  <div class="multisteps-form__content">
+                    <label class="my-2 mr-2" for="inlineFormCustomSelectPref">Name</label>
+                    <input type="text" class="form-control mb-4" id="formGroupExampleInput" placeholder="Name">
+                    <label class="my-2 mr-2" for="inlineFormCustomSelectPref">Email</label>
+                    <input type="email" class="form-control mb-4" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <!-- Choose time limit -->
+                    <label class="my-2 mr-2" for="inlineFormCustomSelectPref">Time</label>
+                    <select class="form-control mb-4" id="exampleFormControlSelect1">
+                      <option>15 minutes</option>
+                      <option>30 minutes</option>
+                      <option>45 minutes</option>
+                      <option>1 hr</option>
+                    </select>
+                    <label class="my-2 mr-2" for="inlineFormCustomSelectPref">Your preferred language</label>
+                    <div class="dropdown mb-4">
+                      <button class="btn btn-outline-primary btn-block dropdown-toggle" type="button" id="dropdown_coins" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Languages
+                      </button>
+                      <div id="menu" class="dropdown-menu"  aria-labelledby="dropdown_coins">
+                        <input type="search" class="form-control" id="searchCoin" placeholder="Search" autofocus="autofocus">
+                        <div id="menuItems"></div>
+                        <div id="empty" class="dropdown-header">No language found</div>
+                      </div>
+                    </div>
+                    <label for="exampleFormControlTextarea1" class="mt-2">Please share anything that will help prepare for our meeting.</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    
+                    <!-- Previous and submit buttons -->
+                    <div class="row row-col-2">
+                      <div class="col">
+                        <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                      </div>
+                      <div class="col">
+                        <button class="btn btn-primary js-btn-next" type="button" title="Next">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Booking confirmation -->
+                <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                  <div class="multisteps-form__content">
+                    <div class="text-center">
+                      <br><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0 0 172 172" style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                          <path d="M0,172v-172h172v172z" fill="none">
+                          </path>
+                          <g>
+                            <path d="M80.625,5.375c-41.55943,0 -75.25,33.69057 -75.25,75.25c0,41.55943 33.69057,75.25 75.25,75.25c41.55943,0 75.25,-33.69057 75.25,-75.25c0,-41.55943 -33.69057,-75.25 -75.25,-75.25z" fill="#ffffff">
+                            </path>
+                            <path d="M80.625,10.75c38.7,0 69.875,31.175 69.875,69.875c0,38.7 -31.175,69.875 -69.875,69.875c-38.7,0 -69.875,-31.175 -69.875,-69.875c0,-38.7 31.175,-69.875 69.875,-69.875M80.625,0c-44.075,0 -80.625,36.55 -80.625,80.625c0,44.075 36.55,80.625 80.625,80.625c44.075,0 80.625,-36.55 80.625,-80.625c0,-44.075 -36.55,-80.625 -80.625,-80.625z" fill="#5e9c76">
+                            </path>
+                            <path d="M67.725,112.875l-27.95,-27.95l7.525,-7.525l20.425,20.425l52.675,-51.6l7.525,7.525z" fill="#5e9c76">
+                            </path>
+                          </g>
+                        </g>
+                      </svg>
+                      <h3 class="modal-title float-center">Successfully Submitted!</h3>
+                      <p class="text-sm-center text-weight-light">A booking confirmation has been sent to your email.</p>
+                    </div>
+                    <a class="btn btn-primary" href="index.html" role="Confirmed">Return to Home</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </main>
+    
+    <!-- Footer with Last Updated date -->
+    <footer class="mt-5 py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">COVID Community<sup>&copy; </sup>
+        <br><small><sup>Last updated 28/11/20</sup></small></p>
+      </div>
+    </footer>
+    
+    <!-- required Bootstrap JS files from Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- template JS files -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="submit.js"></script>
+    <script src="select.js"></script>
+  </body>
+</html>
